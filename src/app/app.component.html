@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <button mat-icon-button class="icon" aria-label="icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Properties Tracker</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="icon" aria-label="icon-button with share icon">
+    <mat-icon (click)="openDialog()">add_circle</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="application">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
