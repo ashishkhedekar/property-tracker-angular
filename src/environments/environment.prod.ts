@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  backendEndpoint: 'https://property-tracker-spring-boot.herokuapp.com'
 };
