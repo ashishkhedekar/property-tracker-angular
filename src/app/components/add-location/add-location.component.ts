@@ -15,8 +15,13 @@ export class AddLocationComponent implements OnInit {
   locationForm = this.formBuilder.group({
     code: '',
     name: '',
-    description: ''
+    mainImage: '',
+    thumbnail: '',
+    description: '',
+
   });
+
+  fileToUpload: File | null = null;
 
   constructor(private formBuilder: FormBuilder,
               private dialogRef: MatDialogRef<AddLocationComponent>,
@@ -32,6 +37,11 @@ export class AddLocationComponent implements OnInit {
       .subscribe(location => console.log("Location created"));
     this.locationForm.reset();
     this.dialogRef.close();
+  }
+
+  handleFileInput(files: FileList)
+  {
+    this.fileToUpload = files.item(0);
   }
 
 }
