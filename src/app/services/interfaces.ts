@@ -4,6 +4,8 @@ export interface LocationInterface {
   mainImage: string;
   thumbnail: string;
   description: string;
+  numberOfSoldProperties: number;
+  numberOfProperties: number;
 }
 
 export interface LocationsInterface {
