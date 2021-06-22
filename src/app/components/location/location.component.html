@@ -13,7 +13,10 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>{{location.numberOfSoldProperties}}</button>
-    <button mat-button>{{location.numberOfProperties}}</button>
+    <button mat-button matTooltip="# of properties">{{location.numberOfProperties}}</button>
+    <button mat-button matTooltip="# of sold in 24 hours">{{location.numberOfSoldInLast24Hours}}</button>
+    <button mat-button matTooltip="# of sold in 30 days">{{location.numberOfSoldInLast30Days}}</button>
+    <button mat-button matTooltip="# of new in 24 hours">{{location.numberOfNewInLast24Hours}}</button>
+    <button mat-button matTooltip="# of new in 30 days">{{location.numberOfNewInLast30Days}}</button>
   </mat-card-actions>
 </mat-card>

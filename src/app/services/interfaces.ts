@@ -4,8 +4,11 @@ export interface LocationInterface {
   mainImage: string;
   thumbnail: string;
   description: string;
-  numberOfSoldProperties: number;
   numberOfProperties: number;
+  numberOfSoldInLast24Hours: number;
+  numberOfSoldInLast30Days: number;
+  numberOfNewInLast24Hours: number;
+  numberOfNewInLast30Days: number;
 }
 
 export interface LocationsInterface {
