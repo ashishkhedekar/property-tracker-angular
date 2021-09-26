@@ -2,7 +2,7 @@
   <mat-card-header>
     <div mat-card-avatar class="location-header-image" [ngStyle]="{'background-image': 'url(' + location.mainImage +')'}"></div>
     <mat-card-title>{{location.name}}</mat-card-title>
-    <mat-card-subtitle>{{location.description}}</mat-card-subtitle>
+    <mat-card-subtitle> {{ (location.description.length>100)? (location.description | slice:0:100)+'...':(location.description) }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="location-card-img">
     <img mat-card-image src="{{location.mainImage}}" alt="{{location.name}}">
